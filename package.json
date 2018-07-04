@@ -20,14 +20,6 @@
     "start": "webpack --watch",
     "build": "webpack"
   },
-  "author": {
-    "name": "Abhishar Jangir",
-    "email": "abhisharjangir@ymail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abhisharkjangir/react-cards-stack.git"
-  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",

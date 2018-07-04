@@ -58,6 +58,7 @@ class Fancy extends React.Component {
   render() {
     const elementType = this.props.elementType;
     const renderCard = () => {
+      alert('here');
       switch (elementType) {
         case 'image':
           console.log('image');
@@ -68,24 +69,7 @@ class Fancy extends React.Component {
       }
     }
     return (
-      <div className="stack-container">
-        <ul id="stack" className={`stack stack--${this.state.effect}`}>
-        {this.state.imgs && this.state.imgs.map((img, i) =>
-          renderCard()
-        )}
-      </ul>
-        <div className="controls">
-          <div>
-            <p className={this.state.queryclass}>{this.state.query}</p>
-            <button className={this.state.negativebtnclass} onClick={this.reject}>
-              {this.state.negativebtnlabel}
-            </button>
-            <button className={this.state.postivebtnclass} onClick={this.accept}>
-              {this.state.postivebtnlabel}
-            </button>
-          </div>
-        </div>
-    </div>);
+      alert('react cards'));
   }
 }
 
