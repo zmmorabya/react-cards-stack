@@ -56,13 +56,23 @@ class Fancy extends React.Component {
   }
 
   render() {
+    const elementType = this.props.elementType;
+    const renderCard = () => {
+      switch (elementType) {
+        case 'image':
+          console.log('image');
+          break;
+        case 'text':
+          console.log('text');
+          break;
+      }
+    }
     return (
       <div className="stack-container">
         <ul id="stack" className={`stack stack--${this.state.effect}`}>
         {this.state.imgs && this.state.imgs.map((img, i) =>
-          <li key={i} className="stack__item">
-          <img src={img} />
-        </li>)}
+          renderCard()
+        )}
       </ul>
         <div className="controls">
           <div>
